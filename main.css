@@ -1,77 +1,91 @@
 body {
-    background: #ced7e5;
+  background: url(https://img.freepik.com/free-vector/cute-animals-pattern-background_62907-50.jpg?size=338&ext=jpg);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+  position: relative;
 }
 
 #slider {
-    width: 384px;
-    height: 128px;
-    border: 5px solid black;
-    margin: 50px auto;
-    overflow: hidden;
+  width: 384px;
+  height: 128px;
+  border: 5px solid #1f1f1f;
+  border-radius: 15px;
+  margin: 50px auto;
+  overflow: hidden;
 }
 
 #polosa {
-    background: #f3f3f3;
-    width: 896px;
-    position: relative;
-    transition: all ease 1s;
-    float: left;
+  background: #f3bdb3;
+  width: 896px;
+  position: relative;
+  transition: all ease 1s;
+  float: left;
 }
 
-#polosa img {}
-
 #polosa::after {
-    display: block;
-    clear: both;
-    content: "";
+  display: block;
+  clear: both;
+  content: '';
 }
 
 button {
+  width: 10%;
+  background: #f3bdb3;
+  border: 2px solid #1a1a1a;
+  border-radius: 5px;
+  padding: 0.5vh 0.5vw;
+  outline: none;
+  font-size: 2.2vw;
+  transition: 0.2s transform ease;
+}
 
-    position: relative;
-    display: block;
-    height: 45px;
-    width: 150px;
-    margin: 10px 7px;
-    padding: 5px 5px;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #383736;
-    border: 2px #383736 solid;
-    border-radius: 4px;
-    text-transform: uppercase;
-    outline: 0;
-    overflow: hidden;
-    background: none;
-    z-index: 1;
-    cursor: pointer;
-    transition: 0.08s ease-in;
-    -o-transition: 0.08s ease-in;
-    -ms-transition: 0.08s ease-in;
-    -moz-transition: 0.08s ease-in;
-    -webkit-transition: 0.08s ease-in;
+button:hover {
+  transform: scale(1.2);
 }
 
 .arrow {
-    text-align: left;
-    padding-left: 17px;
+  text-align: left;
+  padding-left: 17px;
 }
 
 .arrow:before {
-    content: "&#9668";
-    position: absolute;
-    color: #383736;
-    left: 83%;
-    opacity: 0;
-    -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  content: '&#9668';
+  position: absolute;
+  color: #383736;
+  left: 83%;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .arrow:hover:before {
-    left: 84%;
-    opacity: 1;
+  left: 84%;
+  opacity: 1;
 }
 
 .arrow:hover {
-    width: 170px;
+  width: 170px;
+}
+
+.info {
+  z-index: 2;
+  background: #cacaca;
+  border: 5px solid #1a1a1a;
+  border-radius: 10px;
+  display: none;
+  height: 50vh;
+  width: 50vw;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.info img {
+  height: 70%;
+  width: 70%;
 }
