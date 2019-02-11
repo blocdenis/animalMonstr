@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+html {}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0 40px 0;
+}
+
+body {
+    margin: 0px;
+    background: url(https://img.freepik.com/free-vector/cute-animals-pattern-background_62907-50.jpg?size=338&ext=jpg);
+}
+
+.site-header {
+    min-height: 290px;
+    background: url('https://worldwidetrivia.com/wp-content/uploads/2016/09/animals-big-f-0003.png');
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.answer {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.answer li {
+    background: #f1f1f1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.answer li:hover {
+    background: #cecece;
+    font-weight: bold;
+}
+
+.answer li:active {
+    background: #8b8b8b
+}
+
+.result {
+    padding: 30px 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.result-img {
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+}
+
+.reload-button {
+    display: block;
+    margin: 20px auto;
+    background: #c0c0c0;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    min-width: 200px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.reload-button:hover {
+    background: #acacac;
+}
+
+.block-cover {
+
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+a .block-cover {
+    text-decoration: none;
+}
+
+a .block-cover:hover {
+    background: #e0e0e0;
+}
+
+.block-cover img {
+    max-width: 100%;
+}
+
+.block-25 {
+    float: left;
+    width: 33.333%;
+}
+
+.block-25 a {
+    text-decoration: none;
+}
