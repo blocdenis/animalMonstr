@@ -46,7 +46,7 @@ window.onload = function () {
         document.querySelector('main').appendChild(div);
 
         let img = document.createElement('img');
-        img.src = 'images/' + answers[key]['image'];
+        img.src = '/images' + answers[key]['image'];
         img.classList.add('result-img')
         document.querySelector('main').appendChild(img);
 
